@@ -20,7 +20,7 @@ public class myName
 			System.out.println("Hello World my name is "+st); 
   
         }
-		System.out.println("Total number of students : " + linenumber);
+		System.out.println("Total " + linenumber + "students");
   
          
          
