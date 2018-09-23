@@ -14,10 +14,12 @@ public class myName
 	BufferedReader reader = new BufferedReader(input); 
   
 	String st; 
-	while ((st = reader.readLine()) != null) 
+	int linenumber=0;
+	while ((st = reader.readLine()) != null){ 
+		linenumber++;
 		System.out.println("Hello World my name is "+st); 
   
-        
+        }
   
          
          
