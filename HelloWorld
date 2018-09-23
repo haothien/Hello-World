@@ -4,6 +4,9 @@ public class myName
 { 
     public static void main(String[] args) 
     { 
+
+        System.out.println("Hello World this is TDTU"); 
+
          
         Scanner sc = new Scanner(System.in); 
   
@@ -15,5 +18,6 @@ public class myName
          
         System.out.println("Hello World my name is "+name); 
          
+
     } 
 } 
