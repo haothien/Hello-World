@@ -11,13 +11,13 @@ public class myName
         File file = new File("C:\\Users\\bhht\\Desktop\\test.txt"); 
 	FileInputStream fileStream = new FileInputStream(file); 
         InputStreamReader input = new InputStreamReader(fileStream);
-	BufferedReader reader = new BufferedReader(new FileReader(file)); 
+	BufferedReader reader = new BufferedReader(input); 
   
 	String st; 
 	while ((st = reader.readLine()) != null) 
 		System.out.println("Hello World my name is "+st); 
   
-         
+        
   
          
          
