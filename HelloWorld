@@ -1,10 +1,19 @@
-# Hello-World
-class HelloWorld 
+# Hello-World I am XXX
+import java.util.Scanner; 
+public class myName 
 { 
-     
-     
-    public static void main(String args[]) 
+    public static void main(String[] args) 
     { 
-        System.out.println("Hello World I am THIEN"); 
+         
+        Scanner sc = new Scanner(System.in); 
+  
+         
+        String name = sc.nextLine(); 
+  
+         
+  
+         
+        System.out.println("Hello World my name is "+name); 
+         
     } 
 } 
