@@ -1,22 +1,25 @@
-# Hello-World I am XXX
-import java.util.Scanner; 
+import java.util.Scanner;
+import java.io.*; 
 public class myName 
 { 
-    public static void main(String[] args) 
+    public static void main(String[] args) throws Exception 
     { 
 
         System.out.println("Hello World this is TDTU"); 
 
          
-        Scanner sc = new Scanner(System.in); 
+        File file = new File("C:\\Users\\bhht\\Desktop\\test.txt"); 
+  
+		BufferedReader br = new BufferedReader(new FileReader(file)); 
+  
+		String st; 
+		while ((st = br.readLine()) != null) 
+			System.out.println("Hello World my name is "+st); 
   
          
-        String name = sc.nextLine(); 
   
          
-  
          
-        System.out.println("Hello World my name is "+name); 
          
 
     } 
