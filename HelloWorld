@@ -9,19 +9,22 @@ public class myName
 
          
         File file = new File("C:\\Users\\bhht\\Desktop\\test.txt"); 
+	if (file.exists()) {
 		FileInputStream fileStream = new FileInputStream(file); 
-        InputStreamReader input = new InputStreamReader(fileStream);
+        	InputStreamReader input = new InputStreamReader(fileStream);
 		BufferedReader reader = new BufferedReader(input); 
   
-		String st; 
-		int linenumber=0;
-		while ((st = reader.readLine()) != null){ 
-			linenumber++;
-			System.out.println("Hello World my name is "+st); 
+			String st; 
+			int linenumber=0;
+			while ((st = reader.readLine()) != null){ 
+				linenumber++;
+				System.out.println("Hello World my name is "+st); 
   
-        }
-		System.out.println("Total " + linenumber + "students");
-  
+        	}
+			System.out.println("Total number of students : " + linenumber);
+	}else{
+		System.out.println("File does not exists!");
+	}
          
          
          
