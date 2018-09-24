@@ -29,7 +29,5 @@ public class myName
          
          
 
-    } catch (IOException e) {
-	e.printStackTrace();
-	} 
+    }  
 } 
